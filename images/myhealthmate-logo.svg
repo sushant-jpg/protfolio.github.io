@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MyHealthMate Logo</title>
+  <desc id="desc">Gradient heart mark for the MyHealthMate project</desc>
+  <defs>
+    <linearGradient id="mhGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c9a7"/>
+      <stop offset="100%" stop-color="#00e7b7"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#mhGradient)" d="M24 42s-12-7.6-12-18C12 12 18 8 24 14c6-6 12-2 12 10 0 10.4-12 18-12 18z"/>
+</svg>
+

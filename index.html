@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sushant Bhandari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sushant Bhandari</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Ready to Innovate</span>
+                </div>
+                <h1 class="main-heading reveal">
+                    Cybersecurity & Full Stack <span class="gradient-text">Developer</span>
+                </h1>
+                <p class="subtitle reveal">I am a <span id="typed-text"></span></p>
+                <p class="description reveal">
+                    Creating Innovative, Functional, and Secure Software Solutions. Specializing in Full Stack Development and Cybersecurity.
+                </p>
+                <div class="tech-buttons">
+                    <button class="tech-btn">Python</button>
+                    <button class="tech-btn">Javascript</button>
+                    <button class="tech-btn">Node.js</button>
+                    <button class="tech-btn">React</button>
+                    <button class="tech-btn">Cybersecurity</button>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <p class="section-tagline reveal">
+                <i class="fas fa-star"></i>
+                Transforming ideas into digital experiences
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p class="greeting">Hello, I'm</p>
+                    <h2 class="name">Sushant Bhandari</h2>
+                    <p class="bio">
+                        A computer engineering student specializing in Full Stack Development and Cybersecurity. Looking for opportunities where I can apply my technical skills in building secure, innovative software solutions. I am eager to gain hands-on experience in the tech field, with a focus on full stack development, cybersecurity, and problem-solving.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="images/sushantbhandari-cv.jpg" download="Sushant_Bhandari_CV.jpg" class="btn btn-primary" id="downloadCV">
+                            <i class="fas fa-file-download"></i>
+                            Download CV
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <img
+                            id="profileImage"
+                            alt="Sushant Bhandari"
+                            data-photo="images/profile.jpg"
+                            src="images/profile.jpg"
+                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Cdefs%3E%3ClinearGradient id=%22grad%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 style=%22stop-color:%238b5cf6;stop-opacity:1%22 /%3E%3Cstop offset=%22100%25%22 style=%22stop-color:%236366f1;stop-opacity:1%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22200%22 fill=%22url(%23grad)%22/%3E%3C/svg%3E'"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-card reveal">
+                    <i class="fas fa-code"></i>
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Certificates</span>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fas fa-globe"></i>
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title reveal">Portfolio Showcase</h2>
+            <p class="section-description reveal">
+                Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.
+            </p>
+            <div class="portfolio-tabs reveal">
+                <button class="tab-btn active" data-tab="projects">
+                    <i class="fas fa-code"></i>
+                    Projects
+                </button>
+                <button class="tab-btn" data-tab="certificates">
+                    <i class="fas fa-certificate"></i>
+                    Certificates
+                </button>
+                <button class="tab-btn" data-tab="techstack">
+                    <i class="fas fa-cog"></i>
+                    Tech Stack
+                </button>
+            </div>
+            <div class="tab-content active" id="projects-tab">
+                <div class="projects-grid">
+                    <!-- Project cards will be added here dynamically -->
+                </div>
+            </div>
+            <div class="tab-content" id="certificates-tab">
+                <div class="certificates-grid">
+                    <!-- Certificates will be added here -->
+                </div>
+            </div>
+            <div class="tab-content" id="techstack-tab">
+                <div class="techstack-grid">
+                    <!-- Tech stack items will be added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-card reveal">
+                    <div class="card-header">
+                        <h3>Get in Touch</h3>
+                        <p>Have something to discuss? Send me a message and let's talk.</p>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-comment"></i>
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="card-header">
+                        <h3>
+                            <i class="fas fa-comments"></i>
+                            Comments (0)
+                        </h3>
+                    </div>
+                    <form class="comment-form" id="commentForm">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea placeholder="Write your message here..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Post Comment
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sushant-bhandari-1a7b25350" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/sushant-jpg" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://wa.me/9749756981" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="mailto:sushantbhandari101@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Scroll Headline Section -->
+    <section class="clean-scroll" id="roles">
+        <div class="clean-scroll__container">
+            <div class="clean-scroll__viewport">
+                <div id="clean-scroll-line" class="clean-scroll__line">Web Developer</div>
+            </div>
+            <p class="clean-scroll__hint">Scroll or tap to reveal the next role</p>
+        </div>
+    </section>
+
+    <!-- Floating AI Chatbot -->
+    <div class="ai-chatbot" aria-live="polite">
+        <button class="ai-chatbot__launcher" id="chatbotToggle" aria-label="Open AI chat">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="ai-chatbot__panel" id="chatbotPanel">
+            <div class="ai-chatbot__header">
+                <div class="ai-chatbot__icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="ai-chatbot__avatar">
+                    <img src="images/profile.jpg" alt="AI Assistant">
+                </div>
+                <div class="ai-chatbot__titles">
+                    <p class="ai-chatbot__eyebrow">AI Assistant</p>
+                    <p class="ai-chatbot__title">Ask me anything</p>
+                </div>
+                <button class="ai-chatbot__close" id="chatbotClose" aria-label="Close AI chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="ai-chatbot__messages" id="chatbotMessages">
+                <div class="ai-chatbot__msg ai-chatbot__msg--bot">
+                    Hi! I’m your AI assistant. Ask about projects, skills, or contact info.
+                </div>
+            </div>
+            <div class="ai-chatbot__input">
+                <input type="text" id="chatbotInput" placeholder="Type a message..." aria-label="Chat message">
+                <button id="chatbotSend" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sushant Bhandari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
