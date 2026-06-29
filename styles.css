@@ -78,6 +78,8 @@ body::before {
     z-index: 1000;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 30px;
+    box-shadow: 3px 12px 14px rgb(205, 201, 201);
 }
 
 .nav-container {
@@ -834,6 +836,9 @@ html {
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
+    top:12vh;
+    align-items: flex-end;
+    
 }
 
 .ai-chatbot__launcher {
@@ -860,7 +865,7 @@ html {
 
 .ai-chatbot__panel {
     width: min(360px, 90vw);
-    background: rgba(18, 23, 48, 0.96);
+    background: rgba(61, 71, 116, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     box-shadow: 0 24px 80px rgba(0,0,0,0.45);
