@@ -23,21 +23,22 @@ Open `index.html` and update the following:
 - **Title**: Update "Full Stack Developer" to match your role
 - **Bio**: Update the about section with your information
 - **Profile Image**: Replace the placeholder image URL with your photo
-- **Projects**: Edit the `projects` array in `script.js` with your actual projects
-- **Certificates**: Update the `certificates` array in `script.js`
-- **Tech Stack**: Modify the `techStack` array in `script.js`
+- **Projects**: Edit the `projectData` array in `js/projects.js` with your actual projects
+- **Certificates**: Update the `certificateData` array in `js/projects.js`
+- **Tech Stack**: Modify the `techStackData` array in `js/projects.js`
 - **Social Links**: Update LinkedIn, GitHub, and email links in the contact section
 
-### 2. Add Your Projects
+### 3. Add Your Projects
 
-In `script.js`, update the `projects` array:
+In `js/projects.js`, update the `projectData` array:
 
 ```javascript
-const projects = [
+const projectData = [
     {
         title: "Your Project Name",
         description: "Project description",
-        logo: "🎨", // or use an emoji/icon
+        tags: ["JavaScript", "UI"],
+        image: "images/project-image.jpg",
         liveDemo: "https://your-live-demo-url.com",
         github: "https://github.com/yourusername/project"
     },
@@ -68,10 +69,10 @@ In `index.html`, find the social links section and update:
 ### 5. Add Your CV
 
 1. Place your CV file in the project folder
-2. Update the CV path in `script.js`:
+2. Update the download link in `index.html`:
 
-```javascript
-const cvUrl = 'path/to/your/cv.pdf';
+```html
+<a href="images/your-cv-file.pdf" download="Your_Name_CV.pdf" class="btn btn-primary" id="downloadCV">
 ```
 
 ## Deployment

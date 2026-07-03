@@ -32,7 +32,7 @@ Or use an online URL if your image is hosted elsewhere.
 
 ### 3. Projects (10 minutes)
 
-**In `script.js`, lines 89-103:**
+**In `js/projects.js`, update the `projectData` array:**
 
 Replace the `projects` array with your actual projects:
 
@@ -58,10 +58,10 @@ const projects = [
 
 ### 4. Certificates (5 minutes)
 
-**In `script.js`, lines 106-110:**
+**In `js/projects.js`, update the `certificateData` array:**
 
 ```javascript
-const certificates = [
+const certificateData = [
     { name: "Full Stack Web Development", issuer: "Coursera" },
     { name: "React Developer Certification", issuer: "FreeCodeCamp" },
     { name: "AWS Certified", issuer: "Amazon" }
@@ -71,10 +71,10 @@ const certificates = [
 
 ### 5. Tech Stack (3 minutes)
 
-**In `script.js`, lines 113-120:**
+**In `js/projects.js`, update the `techStackData` array:**
 
 ```javascript
-const techStack = [
+const techStackData = [
     { name: "Python", icon: "🐍" },
     { name: "JavaScript", icon: "📜" },
     { name: "React", icon: "⚛️" },
@@ -106,14 +106,12 @@ Update the `data-target` values:
 
 ### 8. CV Download (2 minutes)
 
-**In `script.js`, line 178:**
-
-Replace:
-```javascript
-const cvUrl = 'path/to/your/cv.pdf';
+**In `index.html`, update the download link:**
+```html
+<a href="images/your-cv-file.pdf" download="Your_Name_CV.pdf" class="btn btn-primary" id="downloadCV">
 ```
 
-With the actual path to your CV file.
+Replace the `href` value with the path to your CV file.
 
 ### 9. Tech Buttons (2 minutes)
 
